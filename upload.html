@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<h2>單個文件上傳</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="filename">
+    <br>
+    <br>
+    <input type="submit" value="上傳">
+</form>
+
+<br>
+<br>
+
+<h2>多個文件上傳</h2>
+<form action="/upload_more" method="post" enctype="multipart/form-data" >
+    <!-- 這裡要多加一個multiple屬性 -->
+    <input type="file" name="filename" multiple="multiple">
+    <br>
+    <br>
+    <input type="submit" value="上傳">
+</form>
+</body> 
+</html>
